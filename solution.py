@@ -28,3 +28,14 @@ precios = {
 }
 
 df['Price Per Unit'] = df['Price Per Unit'].fillna(df['Item'].map(precios))
+
+# SIN REGRISTRAR
+df['Payment Method'] = df['Payment Method'].fillna('unregistered')
+df['Payment Method'] = df['Payment Method'].replace("errorr", "unregistered")
+
+df['Location'] = df['Location'].fillna('unregistered')
+
+# PRINT FINAL
+print()
+print("VALUES AFTER CLEANING")
+print(df.info())
