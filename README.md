@@ -41,3 +41,7 @@ After the EDA analysis by ydata-profiling we got the nexts issues.
 **Payment Method** and **Location** has high missing values, 26% and 33% respectively, for that we are changing this missing value to `Unregistered`. In that way we do not mess up or remove huge amount of information from the dataset.
 
 In **Transaction Date** there are some missing values, as it is date information we can deduct them by the above or below rows assuming that the date is aproximated to one of them because is a chronological measure.
+
+# Steps
+
+First of all we need to convert invalid values such as `ERROR` or `UNKNOWN` into valid non-numerical values `NaN`.
