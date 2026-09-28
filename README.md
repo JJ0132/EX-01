@@ -44,4 +44,6 @@ In **Transaction Date** there are some missing values, as it is date information
 
 # Steps
 
-First of all we need to convert invalid values such as `ERROR` or `UNKNOWN` into valid non-numerical values `NaN`.
+First of all we need to convert invalid values such as `ERROR` or `UNKNOWN` into valid non-numerical values `NaN`, convert all values in `Quantity`, `Price Per Unit` and `Total Spent`, that will be used in the formula, into float and change all `Payment Method` column to lower case and replace the typos by the correct one.
+
+Later we apply the formula to each column to replace the NaN's for real values.
